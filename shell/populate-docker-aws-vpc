@@ -36,6 +36,7 @@ replace_string_in_file $filename "    host: EXTERNAL_HOST"                      
 replace_string_in_file $filename "    password: NATS_PASSWORD"                    "    password: ${NATS_PASSWORD}"
 replace_string_in_file $filename "    - 10.10.3.11"                               "    - ${NATS_IP}"
 replace_string_in_file $filename "  - SECURITY_GROUP_ACCESSIBLE_BY_CF_RUNNERS"    "  - ${SECURITY_GROUP_ACCESSIBLE_BY_CF_RUNNERS}"
+replace_string_in_file $filename "  domain: CF_DOMAIN"                            "  domain: ${DOMAIN}"
 
 echo "*********"
 echo "$filename has been updated, remember to update the SUBNET_ID"

@@ -1,3 +1,7 @@
+meta:
+  nats: (( merge || meta.nats ))
+  domain: (( merge ))
+
 networks: (( merge ))
 
 jobs:
@@ -7,6 +11,8 @@ jobs:
         release: docker
       - name: cf-containers-broker
         release: docker
+      - name: containers
+        release: docker
     instances: 1
     resource_pool: default
     persistent_disk: 65536
@@ -14,3 +20,18 @@ jobs:
       - name: default
         default: [dns, gateway]
         static_ips: (( static_ips(1, 2, 3, 4, 5) ))
+    properties:
+      containers:
+        - name: authproxy
+          image: "quay.io/trustedanalytics/auth-proxy"
+          memory: "256m"
+          bind_ports:
+            - "8080:8080"
+          env_vars:
+            - (( "DOMAIN=" meta.domain ))
+            - (( "CF_API=cf-api." meta.domain ))
+            - (( "NATS_URL=nats://"  meta.nats.user ":" meta.nats.password "@" meta.nats.machines.[0] ":4222" ))
+            - (( "ROUTE_HOST=" jobs.docker.networks.default.static_ips.[0] ))
+            - (( "TOKEN_KEY_URL=http://uaa." meta.domain "/token_key" ))
+            - "ROUTE_PORT=8080"
+            - "DOCKER_HOST=unix:///tmp/docker/docker.sock"
