@@ -551,7 +551,7 @@ properties:
             name: 'free'
             container:
               backend: 'docker'
-              image: 'frodenas/logstash'
+              image: 'cfcommunity/logstash'
               tag: '1.4'
             syslog_drain_port: '514/tcp'
             description: 'Free Trial'
@@ -892,7 +892,7 @@ properties:
                     usd: 0.0
                   unit: 'MONTHLY'
               bullets:
-                - 'RStudio® IDE running inside a Docker container' 
+                - 'RStudio® IDE running inside a Docker container'
       - id: '2kfj34ac-ad34-0pa0-12f7-d3f2a28h08e3'
         name: 'postgresql94'
         description: 'PostgreSQL 9.4 service for application development and testing'

@@ -996,7 +996,7 @@ properties:
       plans:
       - container:
           backend: docker
-          image: frodenas/logstash
+          image: cfcommunity/logstash
           tag: "1.4"
         description: Free Trial
         id: 5218782d-7fab-4534-92b8-434204d88c7b
