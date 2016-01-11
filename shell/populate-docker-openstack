@@ -14,13 +14,11 @@ ymlFile="cf-openstack-tiny.yml"
 ymlFolder="${HOME}/workspace/deployments/cf-boshworkspace/"
 
 DIRECTOR_UUID=$(cat ${ymlFolder}deployments/${ymlFile} | grep director_uuid | awk '{print $2}')
-DOCKER_SG=$(awk 'f{print;f=0} /security_groups/{f=1}' ${ymlFolder}deployments/${ymlFile} | sed -e 's/^.*- //')
 NATS_HOST=$(cat ${ymlFolder}.deployments/${ymlFile} | grep nats -A 1 | grep address | awk '{print $2}')
 NATS_PASSWORD=$(cat ${ymlFolder}deployments/${ymlFile} | grep " secret"  | awk '{print $2}')
 DOMAIN=$(cat ${ymlFolder}deployments/${ymlFile} | grep " domain"  | awk '{print $2}')
 EXTERNAL_HOST="cf-containers-broker.${DOMAIN}"
 CF_API_URL="http://api.${DOMAIN}"
-CF_SUBNET1=$(cat ${ymlFolder}deployments/${ymlFile} | grep " net_id"  | awk '{print $2}')
 OS_AUTHURL=$(cat ${ymlFolder}deployments/${ymlFile} | grep " auth_url"  | awk '{print $2}')
 OS_TENANT=$(cat ${ymlFolder}deployments/${ymlFile} | grep " tenant"  | awk '{print $2}')
 OS_USERNAME=$(cat ${ymlFolder}deployments/${ymlFile} | grep " username"  | awk '{print $2}')
@@ -29,7 +27,6 @@ IPMASK=$(cat ${ymlFolder}deployments/${ymlFile} | grep " ipmask"  | awk '{print 
 
 
 echo "DIRECTOR_UUID:                            ${DIRECTOR_UUID}"
-echo "CF_SUBNET1:                               ${CF_SUBNET1}"
 echo "OS_AUTHURL:                               ${OS_AUTHURL}"
 echo "OS_TENANT:                                ${OS_TENANT}"
 echo "OS_USERNAME:                              ${OS_USERNAME}"
@@ -38,7 +35,6 @@ echo "CF_API_URL:                               ${CF_API_URL}"
 echo "EXTERNAL_HOST:                            ${EXTERNAL_HOST}"
 echo "NATS_HOST:                                ${NATS_HOST}"
 echo "SUBNET_ID:                                Get this from OpenStack > Project > Networks > 'Internal Net' > 'docker-services-subnet' > Network ID"
-echo "DOCKER_SG:                                ${DOCKER_SG}"
 echo "IPMASK:                                   ${IPMASK}"
 echo "NATS_PASSWORD:                            ${NATS_PASSWORD}"
 
@@ -49,7 +45,6 @@ replace_string_in_file $filename "  cf_api_url: CF_API_URL"          "  cf_api_u
 replace_string_in_file $filename "    host: EXTERNAL_HOST"           "    host: ${EXTERNAL_HOST}"
 replace_string_in_file $filename "    password: NATS_PASSWORD"       "    password: ${NATS_PASSWORD}"
 replace_string_in_file $filename "    - NATS_HOST"                   "    - ${NATS_HOST}"
-replace_string_in_file $filename "  - DOCKER_SG"                     "  - ${DOCKER_SG}"
 replace_string_in_file $filename "  ipmask: \"IPMASK\""              "  ipmask: ${IPMASK}"
 replace_string_in_file $filename "  domain: CF_DOMAIN"               "  domain: ${DOMAIN}"
 
