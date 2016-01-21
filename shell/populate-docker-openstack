@@ -51,6 +51,7 @@ replace_string_in_file $filename "    password: NATS_PASSWORD"       "    passwo
 replace_string_in_file $filename "    - NATS_HOST"                   "    - ${NATS_HOST}"
 replace_string_in_file $filename "  - DOCKER_SG"                     "  - ${DOCKER_SG}"
 replace_string_in_file $filename "  ipmask: \"IPMASK\""              "  ipmask: ${IPMASK}"
+replace_string_in_file $filename "  domain: CF_DOMAIN"               "  domain: ${DOMAIN}"
 
 
 echo "*********"

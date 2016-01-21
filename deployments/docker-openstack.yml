@@ -14,6 +14,7 @@ templates:
 - docker-jobs.yml
 - docker-openstack.yml
 meta:
+  domain: CF_DOMAIN
   cf_api_url: CF_API_URL
   broker:
     host: EXTERNAL_HOST
