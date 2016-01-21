@@ -228,7 +228,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bosh-workspace
+  bosh-workspace (= 0.9.9)
   bosh_cli (= 1.3104.0)
   guard-rspec
   rake
