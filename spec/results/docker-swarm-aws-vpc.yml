@@ -56,7 +56,7 @@ meta:
     version: latest
   stemcell:
     name: bosh-aws-xen-ubuntu-trusty-go_agent
-    version: 2941
+    version: 3104
 name: docker-swarm-aws-vpc
 networks:
 - name: default
@@ -1033,7 +1033,7 @@ resource_pools:
   network: default
   stemcell:
     name: bosh-aws-xen-ubuntu-trusty-go_agent
-    version: 2941
+    version: 3104
 update:
   canaries: 1
   canary_watch_time: 30000-600000

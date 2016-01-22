@@ -7,7 +7,7 @@ releases:
   git: https://github.com/cf-platform-eng/docker-boshrelease.git
 stemcells:
 - name: bosh-aws-xen-ubuntu-trusty-go_agent
-  version: 2941
+  version: 3104
 templates:
 - docker-deployment.yml
 - docker-properties.yml
