@@ -3,7 +3,7 @@ name: docker-swarm-offline-warden
 director_uuid: current
 releases:
 - name: docker
-  version: '17'
+  version: '23'
   git: https://github.com/cf-platform-eng/docker-boshrelease.git
 - name: docker-broker-images
   version: '1'
