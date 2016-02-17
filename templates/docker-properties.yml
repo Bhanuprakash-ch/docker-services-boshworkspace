@@ -13,6 +13,8 @@ meta:
 properties:
   docker:
     tcp_address: 0.0.0.0
+    ulimit:
+      nofile: 65536
   swarm_manager: ~
   fetch_containers: ~
   docker_broker_images: ~
