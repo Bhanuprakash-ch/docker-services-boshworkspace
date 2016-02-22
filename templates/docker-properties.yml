@@ -989,3 +989,48 @@ properties:
               bullets:
                 - 'Dedicated 3.0 MongoDB server'
                 - 'MongoDB 3.0 running inside a Docker container'
+      - id: '079b19fc-509c-11e5-9c4c-00155d3cf01b'
+        name: 'cassandra'
+        description: 'Cassandra'
+        bindable: true
+        tags:
+          - 'cassandra'
+        metadata:
+          displayName: 'Cassandra'
+          longDescription: 'Cassandra'
+          providerDisplayName: 'Cassandra'
+          documentationUrl: 'http://docs.datastax.com/'
+          supportUrl: 'http://wiki.apache.org/cassandra/ThirdPartySupport'
+        dashboard_client:
+          id: 'cassandra-dashboard'
+          secret: 'cassandra-secret'
+          redirect_uri: (( meta.broker.protocol "://" meta.broker.host "/manage/auth/cloudfoundry/callback" ))
+        plans:
+          - id: '14d52ff4-509c-11e5-956f-00155d3cf01b'
+            name: 'v2.2'
+            container:
+              backend: 'docker'
+              image: 'cassandra'
+              tag: '2.2'
+            description: 'Cassandra 2.2'
+            metadata:
+              costs:
+                - amount:
+                    usd: 0.0
+                  unit: 'MONTHLY'
+              bullets:
+                - 'Dedicated Cassandra 2.2 running inside a Docker container'
+          - id: '82c24382-ce6c-11e5-9185-00155d3cf01b'
+            name: 'v3.3'
+            container:
+              backend: 'docker'
+              image: 'cassandra'
+              tag: '3.3'
+            description: 'Cassandra 3.3'
+            metadata:
+              costs:
+                - amount:
+                    usd: 0.0
+                  unit: 'MONTHLY'
+              bullets:
+                - 'Dedicated Cassandra 3.3 running inside a Docker container'
