@@ -2,6 +2,7 @@ meta:
   subnet_ids:
     docker: (( merge ))
   security_groups: (( merge ))
+  dns_servers: (( merge ))
   instance_type: m3.large
   subnets:
     - range: 10.10.5.0/24
@@ -11,10 +12,7 @@ meta:
       static:
         - 10.10.5.10 - 10.10.5.250
       gateway: 10.10.5.1
-      dns:
-        - 10.10.10.250
-        - 10.10.10.251
-        - 10.10.10.252
+      dns: (( meta.dns_servers ))
       cloud_properties:
         security_groups: (( meta.security_groups ))
         subnet: (( meta.subnet_ids.docker ))

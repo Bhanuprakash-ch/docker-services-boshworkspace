@@ -28,6 +28,7 @@ meta:
     port: 4222
     machines:
     - 10.10.3.11
+  dns_servers: DNS_SERVERS
   subnet_ids:
     docker: SUBNET_ID
   security_groups:
