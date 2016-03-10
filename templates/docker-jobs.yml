@@ -4,6 +4,11 @@ meta:
 
 networks: (( merge ))
 
+meta:
+  release:
+    docker: docker
+  env_name: (( merge || "env-name" ))
+
 jobs:
   - name: docker
     templates:
@@ -22,6 +27,14 @@ jobs:
         static_ips: (( static_ips(1, 2, 3, 4, 5) ))
     properties:
       containers:
+        - name: registrator
+          image: "gliderlabs/registrator:v6"
+          memory: "256m"
+          command: (( "-resync 3600 -ip " jobs.docker.networks.default.static_ips.[0] " consul://consul-master-0.node.consul:8080" ))
+          volumes:
+            - "/var/vcap/data/sys/run/docker:/tmp/docker"
+          env_vars:
+            - "DOCKER_HOST=unix:///tmp/docker/docker.sock"
         - name: h2oprovisioner
           image: "quay.io/trustedanalytics/h2o-provisioner"
           memory: "1024m"
@@ -36,4 +49,3 @@ jobs:
             - "KRB_REALM=CLOUDERA"
             - "KRB_USER=cf"
             - "KRB_PASSWORD=cf1"
-

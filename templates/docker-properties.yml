@@ -806,10 +806,15 @@ properties:
             name: 'free'
             container:
               backend: 'docker'
-              image: 'ansi/mosquitto'
+              image: 'trustedanalytics/mosquitto'
               tag: 'latest'
               persistent_volumes:
                 - '/data'
+            credentials:
+              username:
+                key: 'MOSQUITTO_USER'
+              password:
+                key: 'MOSQUITTO_PASS'
             description: 'Free Instance'
             metadata:
               costs:
