@@ -13,17 +13,17 @@ replace_string_in_file() {
 ymlFile="cf-openstack-tiny.yml"
 ymlFolder="${HOME}/workspace/deployments/cf-boshworkspace/"
 
-DIRECTOR_UUID=$(cat ${ymlFolder}deployments/${ymlFile} | grep director_uuid | awk '{print $2}')
-NATS_HOST=$(cat ${ymlFolder}.deployments/${ymlFile} | grep nats -A 1 | grep address | awk '{print $2}')
-NATS_PASSWORD=$(cat ${ymlFolder}deployments/${ymlFile} | grep " secret"  | awk '{print $2}')
-DOMAIN=$(cat ${ymlFolder}deployments/${ymlFile} | grep " domain"  | awk '{print $2}')
+DIRECTOR_UUID=$(grep director_uuid: ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
+NATS_HOST=$(grep "nats:" -A 1 ${ymlFolder}.deployments/${ymlFile} | grep "address:" | awk '{print $2}')
+NATS_PASSWORD=$(grep " secret:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
+DOMAIN=$(grep " domain:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
 EXTERNAL_HOST="cf-containers-broker.${DOMAIN}"
 CF_API_URL="http://api.${DOMAIN}"
-OS_AUTHURL=$(cat ${ymlFolder}deployments/${ymlFile} | grep " auth_url"  | awk '{print $2}')
-OS_TENANT=$(cat ${ymlFolder}deployments/${ymlFile} | grep " tenant"  | awk '{print $2}')
-OS_USERNAME=$(cat ${ymlFolder}deployments/${ymlFile} | grep " username"  | awk '{print $2}')
-OS_APIKEY=$(cat ${ymlFolder}deployments/${ymlFile} | grep " api_key"  | awk '{print $2}')
-IPMASK=$(cat ${ymlFolder}deployments/${ymlFile} | grep " ipmask"  | awk '{print $2}')
+OS_AUTHURL=$(grep " auth_url:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
+OS_TENANT=$(grep " tenant:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
+OS_USERNAME=$(grep " username:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
+OS_APIKEY=$(grep " api_key:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
+IPMASK=$(grep " ipmask:" ${ymlFolder}deployments/${ymlFile} | awk '{print $2}')
 
 
 echo "DIRECTOR_UUID:                            ${DIRECTOR_UUID}"
