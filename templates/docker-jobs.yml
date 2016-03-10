@@ -30,7 +30,7 @@ jobs:
         - name: registrator
           image: "gliderlabs/registrator:v6"
           memory: "256m"
-          command: (( "-resync 3600 -ip " jobs.docker.networks.default.static_ips.[0] " consul://consul-master-0.node.consul:8080" ))
+          command: (( "-resync 3600 -ip " jobs.docker.networks.default.static_ips.[0] " consul://cdh-master-0.node.consul:8080" ))
           volumes:
             - "/var/vcap/data/sys/run/docker:/tmp/docker"
           env_vars:
