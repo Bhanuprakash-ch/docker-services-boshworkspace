@@ -3,7 +3,7 @@ name: docker-swarm-openstack
 director_uuid: DIRECTOR_UUID
 releases:
 - name: docker
-  version: '23'
+  version: '24'
   git: https://github.com/cf-platform-eng/docker-boshrelease.git
 stemcells:
 - name: bosh-openstack-kvm-ubuntu-trusty-go_agent
