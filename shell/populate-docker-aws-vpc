@@ -13,11 +13,11 @@ replace_string_in_file() {
   echo "Could not execute execute sed command replace $assuresearchString with $assurereplaceString in file $assurefilename, terminating install."
 }
 
-DIRECTOR_UUID=$(cat ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | grep director_uuid | awk '{print $2}')
+DIRECTOR_UUID=$(grep director_uuid: ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | awk '{print $2}')
 SECURITY_GROUP_ACCESSIBLE_BY_CF_RUNNERS=$(awk 'f{print;f=0} /security_groups/{f=1}' ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | sed -e 's/^.*- //')
-NATS_IP=$(cat ~/workspace/deployments/cf-boshworkspace/.deployments/cf-aws-${deploymentSize}.yml | grep nats -A 1 | grep address | awk '{print $2}')
-NATS_PASSWORD=$(cat ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | grep " secret"  | awk '{print $2}')
-DOMAIN=$(cat ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | grep " domain"  | awk '{print $2}')
+NATS_IP=$(grep "nats:" -A 1  ~/workspace/deployments/cf-boshworkspace/.deployments/cf-aws-${deploymentSize}.yml | grep "address:" | awk '{print $2}')
+NATS_PASSWORD=$(grep " secret:" ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | | awk '{print $2}')
+DOMAIN=$(grep " domain:" ~/workspace/deployments/cf-boshworkspace/deployments/cf-aws-${deploymentSize}.yml | awk '{print $2}')
 EXTERNAL_HOST="cf-containers-broker.${DOMAIN}"
 CF_API_URL="http://api.${DOMAIN}"
 
