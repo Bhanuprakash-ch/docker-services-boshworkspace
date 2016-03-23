@@ -6,7 +6,6 @@ releases:
   version: '23'
   git: https://github.com/cf-platform-eng/docker-boshrelease.git
   ref: 'e1cc5ca045af1dc829b269b9b6eb0f6cd8ce965d'
-  url: http://bosh.io/d/github.com/cf-platform-eng/docker-boshrelease?v=23
 stemcells:
 - name: bosh-openstack-kvm-ubuntu-trusty-go_agent
   version: 3104
