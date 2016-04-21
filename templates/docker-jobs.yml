@@ -35,17 +35,3 @@ jobs:
             - "/var/vcap/data/sys/run/docker:/tmp/docker"
           env_vars:
             - "DOCKER_HOST=unix:///tmp/docker/docker.sock"
-        - name: h2oprovisioner
-          image: "quay.io/trustedanalytics/h2o-provisioner"
-          memory: "1024m"
-          bind_ports:
-            - "9876:8080"
-            - "54310-54329:54310-54329"
-          env_vars:
-            - "DRIVER_PORT_LOWER=54310"
-            - "DRIVER_PORT_HIGHER=54329"
-            - (( "DRIVER_IP=" jobs.docker.networks.default.static_ips.[0] ))
-            - "KRB_KDC=cdh-manager-0.node.consul"
-            - "KRB_REALM=CLOUDERA"
-            - "KRB_USER=cf"
-            - "KRB_PASSWORD=cf1"

@@ -832,7 +832,7 @@ properties:
           - 'data-science-tool'
         metadata:
           displayName: 'ipython'
-          imageUrl: ''
+          imageUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAAHlBMVEVMaXFYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHSdilKdAAAACXRSTlMAIDBQYI7AQAzSK3d5AAAAU0lEQVR4XmMYvoBzJhBMRPBngoAA1aRDXFw8ENIuLi6RKNIGDGhAc2hLM6WlpeGRZgeGziCVZgwNDaVXqI1KI8J8qKUWRDofkmGOv2Sibak4sgEAR3h+u1/VnfIAAAAASUVORK5CYII='
           longDescription: 'Docker container for the [SciPy stack](../scipystack) and configured IPython notebook server.'
           providerDisplayName: ''
           documentationUrl: 'http://ipython.org/documentation.html'
@@ -872,7 +872,7 @@ properties:
           - 'data-science-tool'
         metadata:
           displayName: 'RStudio®'
-          imageUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAACxFBMVEUAAABWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3RWX3QI/HwsAAAA63RSTlMAAQIDBAUGBwgJCgsMDQ4PEBITFBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAyMzQ1Njo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZXF1eX2BhYmNkZWZnaGpsbm9wcXJzdHZ3eHp7fH1+f4CBgoOEhYaHiImKi4yNj5CTlJWWl5iZmpydnp+goaKjpKWoqaqrrK6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tzd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+8B+UWwAABRdJREFUeF6ll/F/zHUcxz/ntjsztg0Vy6QJjWlKyiSCGQtEtYJKGsoyLWuklA1lG5ZIiQk2gqWxLcrQsMYYtRnQzV1z2z3/ib7f79187/vd3W6Px71++bwfrx+e9/3c+/N5v98f4VmBQRFTVuwrAsD6e0FGYu+gQNFuBfSOW3ceRf9ZrTYUnV8zKtLQPsBzGacArpftX79mwfz5yVmbdp6pAzid/rzwrdica8C13NkvRHVr8ToPHPFWdhVwJWeQD0CXnKvA4fjIznpwcO+J+4G69W0C4mqA47GBHjdrMDxTAo7aBK8A4wfQfGmaaEOJ5xyQavIMiNgGd78OEm0qNPcObOjpCdDvKFyeJnzq1Qvw81Ot/UfKoWSgaIdij0B5tN4NuQC5St4GR+sVE67bxj4o7aEDnISdodL6xg1Hcys1NW4brUnMCfg+QJOhLAclD0nBu9Bk0ctqB6qndhKq/oA0d8BLFmr6yR+3h5urp0+ZqtHkeV8ernTAwRgV8HAVjFcB5hM4RstBz99YJDxpcEoF/BWnGvF3qez6APApLBQKoIxxwrP65sI/0aqxEjJb4j7wS7jzy4q5+LQXQvASqFQN8xVqW07Dd1jiXeEnKHpFClfhVFNJ8RcTZIIpG8eHKuFZSDcq0YC75Le4vfbevN/oYLMUnsfeKAuA8mGS88RFLrjd0jxudleCrGb7S6r9YkbKZTZIwVm2pklaunPHwSq4M1ayFnFvpgroD0vkNfI0x4VGRS7AGJdhGpqO8mvGZpa55W4zFnmdDKO0gF9dgImqtdjBamk5xiazar5s4zUJv5Za4RNg3k6Bku9vg1Qz4hRFQnQ5SYZvgFhHoZwkDUB8Q71J9IThvgHRFUqmPtcC3mlsGC+mUB/uEzA4HyYpt3CjeznrY7GniqUc6OIF0HK6Ypefhd3yQXXwsXBXHTmigLVmL4C3o6KGzJi5sqAa2NpDObK3x2oAhygVR5kvvABsFkuDzWYHauI7SM7MexQLjVZQLuB1z4BD3JfUaLNZCp2lNuYK98doAckguDfOMyBiblJS0puTBvR1msa4q/CZ0Go4CP4d7QmgV6+0ZlrbQ9oNCNsCjR+ZWwG8b0GnxytomidaaTh4/xPTHQ2yGpV9G/PgzKNCr2TwnsZzNDdJgrIoyet4DA6oVVRNY1sHKT8zK3NNJdQNlcygUsg0CaE/SG0dZSU9AzdDtVyHuh6F94XQH2Xfl8m8Cm7LJXHQZRokpv4y+b7OAUub+FPuCElWysKE7jq3q6AUwg65HG+HVKErKK1LWqAodgEmGwOMTq8YlhmEMP7N9ZiADpqSpi+q3eNSky+xUQHkLU5ZMDJEds0XYbq0JsDelFl9DWpR1Zf1J38EUAAVANh/CJX9YfXU9xcGkQ1QNUQt67rGYsyCW7vzf5In0lmFu3btuQXLnXXdzq6OQvTamF8Ge41qY1Fbm6u5FoWFhYbK3xggraFRJVxzso/QPEcIQ3BotzQwqa1N21x7lDJSaLTEfsMZRDZQ+5jzYl3HpDZXtb07AfrDluuod0WzYYuyzWFgUtu7dsAIyYfliQkPlPiVlcNOgEFshTkTEuIX1nAjUB0wtCOOmGpDJ+vQBzNKDS69Z1BHHO2QJcwj8q5Wu6ky2+2JMLdS8QpmBKtDlnbMk9WpW1d3uXcyU7hihRjUMU8/aPqWftDUj7o+pY66/g7b/o/7/j84/H/y+P/o8v/Z5//D0/+nr/+Pb7+f//8D7AyyegDiVsgAAAAASUVORK5CYII='
+          imageUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAh1BMVEVMaXFYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHT///9kbH6ytb/HytGFipl3fo6jp7P09Pacoa2HjZvf4OSRlqTS1drm6Ov+/v7t7vBZYXXi5OfMztSJj526vsa7vsZ/hZT7+/xudYfaUYWIAAAAE3RSTlMAouUtWAf38wyNINXnGbZA6Mx79VAZqwAAAhlJREFUeF7Nl9eS2zAMRSOvLbm3Q6oX97b7/9+XiaJEsiBTzvBhc18xR7gDgiD043/TaLV1NmsPvPXG2a5G/0AOly5PcpfD9/jFxEMKb7LoRceTKqm+xvfgcgnu8VVX6SdjMzucAxD554P6q8PZjwCYD01pHYBTkSuhvDgBOC+TT2cA2V51ap8BzKbd7McA0IF6qUADg49O1gMeR2XQ8QF4HfR0ABSfyqjPAhgI5+MZkB5Ujw4pMGtXzQEKyUq6AJzW+QKP2rPJ+QMYPpmegz6qt3TUMG8anwCBelMBMKnZhQuZelsZuItm4tNzX8VhpdSXjvanRuqRB8VzPKSW9tt0Ad6oUer8NQxR0roljYIvIVIC9nel/C+ELxXBsnLtgi/hnaqUSmM+uL99r4CzAU60+PgZWJXwFvTBAKtQ+D5o2FZtzVX1wGErfqVq8A3EfXDaisewKeE13ExwgizoHdYl7EFgglPQiexvr4SBy0s4CUJkYnUBDHBTqeqEpW0Jf5VRadtUsCgMI0DnqkM3WPcdVV43lzyq3ibxqcsumqS3PcP6nER79l6Mva4bW1yM3ivpU0XFlRTDQMKqAPKuYSDHkIQTDVEix5BxAO6aczqWA1COXglXxgMxeuXQl3BlXO/F0Ld4bmweOpsn1uZxt1orbBYam1XKcomzXx/tF1f7lVku61l8+7Ws3+JMLOsWvwkWPyjWv0bfr59dFsf54LW2aAAAAABJRU5ErkJggg=='
           longDescription: 'RStudio® IDE for programming in R langauge'
           providerDisplayName: 'RStudio®'
           documentationUrl: 'https://support.rstudio.com/hc/en-us/categories/200035113-Documentation'
@@ -1004,6 +1004,7 @@ properties:
           - 'cassandra'
         metadata:
           displayName: 'Cassandra'
+          imageUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAeFBMVEVMaXFYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHRYYHR0oG8jAAAAJ3RSTlMAARTv/fSH1A8JWamxMx3f57YZQxfc6mCWbIzJxnRWuyZ6oFF9KK05nqoGAAABiElEQVR4Xu1W25bCIAxcaEWKtVe1N1vvy///4Y549JCu1bo8bvPUwCQkkwT69c9kkklkJ9LY09qLU9HJTyyDYudrS/xdEYw0zWrPmMya8HgMm5lRvDobE6+4ov202rPbAttXqX/1Jd5GrxLgkkPvmOxgltVL01UKzKZ6kmBQbbCVroZtcwD8eiA6WftwnA+YsjN258th38s5fJ/Z0/osEFdpRSyLMgzLQlqQEpDFk6TkFoR2FtCwbli20AqL2195cYSUWCFH0O8yj6zQE+i8b0sxfA2jtVBKmA9OvVJr3l8JQU1rqGEtaAxfYAPk29iZ5DhOPfKEktvWDfJ+8MC+4YuwAOIXVOvH+X2vmNA6pv2IybDIW2IuyHYUay1unyfsXWiXokBWLzDUh/blBd5P5gtuWsp9hFBsHYiIIlog3E82OUef5JyZnC22+Xi2pWGb1JmPrbM0dXbpMKfedp8qOs/q3Tx3Zp5dbhKXO8zh9nS/t91fDPe3yv2VdH+f6Z/B7i9/BpNMMskPeU9AeSLw96QAAAAASUVORK5CYII='
           longDescription: 'Cassandra'
           providerDisplayName: 'Cassandra'
           documentationUrl: 'http://docs.datastax.com/'
@@ -1041,3 +1042,44 @@ properties:
                   unit: 'MONTHLY'
               bullets:
                 - 'Dedicated Cassandra 3.3 running inside a Docker container'
+
+      - id: '61145208-f742-11e5-9ce9-5e5517507c66'
+        name: 'orientdb'
+        description: 'OrientDB service running inside a Docker container'
+        bindable: true
+        tags:
+          - 'orientdb'
+          - 'nosql'
+          - 'graph'
+        metadata:
+          displayName: 'OrientDB'
+          imageUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAFGUlEQVR4Ae3bA3AtSx4H4I5tXa9t69m2bdu2bdu2bdt+r/RsXCbp/daprppogrOpO1Vf8fS/z+/MdKenZxJG61hp7R3+Y0k2JYzJIwn8Gx5kfcZ82Incwnv8kDEdtowD6eZumhijYWFh3idyChUU3BctopQi8tRp5UYikd0JhRi4mmVpyBl4FaYSiWxSqIEncBMrERhMjSquJvawMQU59jp4gHvoIDDQGnPwHrHgzzDVXElkewL9bw97EBN7FGZgOInIO8xPoL/tG7mLmDiDypzzQgl1jGcKEyghd+htmEnkIX5CoD9tf82HxMT9NDOQH76CiSzOLpzG9TzEDaxNObkDz82nRLq5jR8S6KvtBkwjJj7gN/T3KlmCk3iFL+kkMp1rmJ8aArkDt/MosYd7+BtFZJ4VjiWSmsX2BLLatrAyt/A5MfEGm9LMkI7jYg4gJl5lIxozvnQ5h3E9R7A723EIl3EINaTtKliCm5hKTHTzEHMTGJaJa76MsTiNS1mIakIPRTRQ13O1Rgk1NFBC6OF7HMVHxAy39T2P5A9dwzXEDJ9yEDUMto86TqWLmOEe0vlj2EKvzDfERBf3swCl5Fm3/4ErmJkxhOYY7rDpbJme5U7O4/sE8vUBbRzG1GTobDyii5X0Fo8uzqOd4RhChzGTyBU0MuIrr3IOJ3I/32e4+mrnSj5hYcLIB4bvcSGLExjOvv7CYdQzamvsIpooZbh/4BJq+9iAmH3MPgZzOfo8+fa3ci5v26glMOAi27Iik6mlhKwxVMNkVmBfmkYhcB3HcR37szSTqSTQZ5HFuIc3uZqD2JSVWYoV2Ij9uILXmMqdNI5C4ApOJdLFV7zC6axIB4HsIvyW25O163S+ZCrdxMRpVIx4YNiJSOobHmVHvkcxmUUmcgQfE/vh4LTgCIbemEiWTp5lExoIZF4uS3ErU/9/AwNTuYSfZYeGFlbhZj4hkjqJ8gK6pDv5qodOIt08yxKU9FW8ngU5kEf5jFlE7hilSauSs5jGS1zAnqzN0izF0qzFzpzOEzzDmgNZ1rUzN9tzNhfQymjsj2/KSkyiiiIC6WcDlbTwe1bIs65toWT4A88+Zh+jMabKRuj2cDzFjOqrC/uy/AhsAMzBTfyRwKgE/ivv8SQ/Yjgf1V5D5FIaGPGwlZxGpJtL6WCo+2nmRDqJTGU9AiMUFlbi82SlcxE/GMJt2vGcyjRiD0/xnZHcl/45TxETXTzM0pST5yZ/Dm6lM6OfHQkMY1CYxI3EDN1cTTt5toC34C26iKSeYBLDvi17MZ1EUh9zIj8mJBr+rYzifyujgSZKCD2U8kuOJOvh3RrD+dTwj9xJNzExg9tYjgoCafuduYXjOOjfjuNWzqONrFvWJXmUtO/zqWZIwzawLi8TE59zBxvQRiCrzhJ8QSR1GZWZbeGHXJJcXe/wI3KGhFrm43KmEZnF5zzH0SxOI4G+ao7nRWKim33oz/caxwXJn6i1yL+MYyFO4zqu5CS2ZSEmUEZgIEvQC4iJL1hiAHXGcymRyFEEcr9XWU09dVTlfscS9iAmXmEiA508HyJyLbWF+p7X2nQReziNSgZabxE+5BEmUpB3VkvzFZHIlyxDYDA3LkfxCJMLNfBSSeD7aWOw9X7KuUwp1MDL8DWRWWxInnql/JnWQh3D6xGJPMgEcj9co6hQA+9B5CvWJDCmt4LOJ3IOdWP9P1nG8TxP8CPCWA+8OI+xAGN/d5O1WXy0J5i/A3ob7Dxq/u3sAAAAAElFTkSuQmCC'
+          longDescription: 'An OrientDB service for development and testing running inside a Docker container'
+          providerDisplayName: 'OrientDB'
+          documentationUrl: 'http://orientdb.com/docs'
+          supportUrl: 'http://orientdb.com/support/'
+        dashboard_client:
+          id: 'orientdb-client'
+          secret: 'orientdb-secret'
+          redirect_uri: (( meta.broker.protocol "://" meta.broker.host "/manage/auth/cloudfoundry/callback" ))
+        plans:
+          - id: '599f73ec-f745-11e5-9ce9-5e5517507c66'
+            name: 'free'
+            container:
+              backend: 'docker'
+              image: 'orientdb/orientdb'
+              tag: 'latest'
+              persistent_volumes:
+                - '/orientdb/databases'
+                - '/orientdb/backup'
+            credentials:
+              password:
+                key: 'ORIENTDB_ROOT_PASSWORD'
+            description: 'Free Trial'
+            metadata:
+              costs:
+                - amount:
+                    usd: 0.0
+                  unit: 'MONTHLY'
+              bullets:
+                - 'OrientDB running inside a Docker container'
